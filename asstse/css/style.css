@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Poppins&family=Righteous&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F9FCFD;
+}
+.nav-bg{
+    background-color: #9C29B2;
+}
+.logo{
+    width: 5rem;
+}
+.logo img{
+    width: 100%;
+}
+.btn-search{
+    background-color: #FFC909;
+    color: #9C29B2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-cart{
+    background-color: #FFC909;
+    color: #9C29B2;
+}
+.nav-link{
+    color: rgba(221, 200, 125, 0.904) !important;
+}
+.nav-link.active{
+    color: #FFC909 !important;
+}
+.hero-section{
+    background: #FFC909
+}
+.btn-top{
+    display: none;
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    font-size: 2rem;
+    color: #9C29B2;
+    z-index: 1;
+    background: #FFC909;
+}
+.btn-top:hover{
+    background-color: #9C29B2;
+    color: #FFC909;
+}
+.hero-section svg{
+    position: absolute;
+}
+.hero-section .container{
+    height: 80vh;
+}
+.main-heading{
+    color: #9C29B2;
+    font-family: 'Righteous', sans-serif;
+    font-weight: bold;
+    -webkit-text-stroke: 0.010rem #fff;
+}
+.main-para{
+    color: #9C29B2;
+    font-family: 'Inter', sans-serif;
+}
+.btn-hero{
+    background-color: #9C29B2;
+    color: #FFC909;
+    border-radius: 0.5rem !important;
+}
+.card-bg{
+    background-color: #9C29B2 !important;
+    border: 3px solid #FFC909;
+    border-radius: 1.1rem;
+}
+.card-bg .card-text{
+    font-size: 0.9rem;
+    padding-bottom: 0rem !important;
+}
+.age,.time{
+    border-right: 1px solid #fff;
+}
+.card-bg .btn{
+    border-radius: .6rem;
+}
+.card-bg .btn-c{
+    border-radius: 100rem;
+    padding: 10px !important;
+}
+.services-section{
+    margin-top: 10rem !important;
+}
+.about-section{
+    background-image: url(/asstse/Images/bgbgbgbg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.border-img1{
+    width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 5rem;
+}
+.border-img2{
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 4rem;
+}
+.border-img1 img{
+    width: 100%;
+    height: auto;
+}
+.border-img2 img{
+    width: 100%;
+    height: auto;
+}
+.edu-section{
+    background: linear-gradient(#F9FCFD,#D260E8);
+    padding-bottom: 10rem !important;
+}
+.edu-section .card-title{
+    font-size: 1.6rem !important;
+}
+.edu-section .card-text{
+    font-size: 1.05rem !important;
+}
+.coleb-section{
+    background-image: url(/asstse/Images/Group\ 96.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    bottom: 15rem;
+}
+.contact-section .container{
+    background-image: url(/asstse/Images/contbg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 5rem 8rem !important;
+}
+.btn-sub{
+    background-color: #9C29B2;
+    font-family: 'Righteous', sans-serif;
+    letter-spacing: 1px;
+}
+.btn-sub-n{
+    background-color: #9C29B2;
+    font-family: 'Righteous', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+.email-n::placeholder{
+    color: #F9FCFD;
+}

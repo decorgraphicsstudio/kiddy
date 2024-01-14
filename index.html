@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="./asstse/css/style.css">
+
+    <title>Mini Project</title>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light nav-bg d-flex flex-column">
+        <div class="container d-flex flex-row align-items-center justify-content-between">
+            <div class="logo">
+                <img src="./asstse/Images/logo.png" alt="">
+            </div>
+            <div class="search w-50">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search !" aria-label="Recipient's username"
+                        aria-describedby="button-addon2">
+                    <button class="btn btn-search" type="button" id="button-addon2"><i
+                            class="bi bi-search"></i></button>
+                </div>
+            </div>
+            <div class="cart">
+                <button class="btn btn-cart"><i class="bi bi-cart3"></i></button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Query</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--bottom to top-->
+    <div class="b-t d-flex align-items-center justify-content-center">
+        <button class="btn btn-top shadow rounded-5 pb-2"><i class="bi bi-rocket-fill"></i></button>
+    </div>
+    <!--script-->
+    <script>
+    $(document).scroll(function(){
+        let t = $(window).scrollTop();
+        if (t>100) {
+            $(".btn-top").fadeIn()
+        } else {
+            $(".btn-top").fadeOut()
+        }
+    })
+    
+    $(".btn-top").click(function(){
+        $(window).scrollTop(0)
+    })
+    </script>
+    <!-- main section -->
+    <section class="hero-section py-4">
+        <div class="container d-flex flex-row align-items-center">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 pt-sm-5">
+                    <div class="hero-text d-flex flex-column justify-content-between">
+                        <h1 class="main-heading">
+                            Welcome To Kiddy
+                            <br>
+                            Rainbow Slime CO.
+                        </h1>
+                        <p class="main-para w-75">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                            psum.
+                        </p>
+                    </div>
+                    <button class="btn btn-hero mt-2">Join Now</button>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="hero-img">
+                        <img src="./asstse/Images/Group 95.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffc909" fill-opacity="1" d="M0,224L80,186.7C160,149,320,75,480,85.3C640,96,800,192,960,197.3C1120,203,1280,117,1360,74.7L1440,32L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+    </section>
+    <!-- 2 Section -->
+    <section class="services-section pt-5 my-5">
+        <div class="container">
+            <div class="services-heading py-3 my-5">
+                <h1 class="text-center">
+                    Providing Good Qualities <br> For Your Loving Kids
+                </h1>
+            </div>
+            <div class="row g-3 my-5 py-5 flex-wrap">
+                <div class="col-12 col-md-6 col-sm-12 col-lg-4 col-xl-3">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="" class="text-decoration-none text-dark">
+                            <div class="card rounded-4 text-center py-5 shadow"
+                                style="max-width: 18rem; min-width: 16;">
+                                <div><img src="./asstse/Images/BUS.png" class="img-fluid" alt=""></div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Bus Service</h5>
+                                    <p class="card-text">ubiquitous models rather than parallel initiatives. Seamlessly
+                                        reinvent success.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-sm-12 col-lg-4 col-xl-3">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="" class="text-decoration-none text-dark">
+                            <div class="card rounded-4 text-center py-5 shadow"
+                                style="max-width: 18rem; min-width: 16;">
+                                <div><img src="./asstse/Images/BUS.png" class="img-fluid" alt=""></div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Bus Service</h5>
+                                    <p class="card-text">ubiquitous models rather than parallel initiatives. Seamlessly
+                                        reinvent success.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-sm-12 col-lg-4 col-xl-3">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="" class="text-decoration-none text-dark">
+                            <div class="card rounded-4 text-center py-5 shadow"
+                                style="max-width: 18rem; min-width: 16;">
+                                <div><img src="./asstse/Images/BUS.png" class="img-fluid" alt=""></div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Bus Service</h5>
+                                    <p class="card-text">ubiquitous models rather than parallel initiatives. Seamlessly
+                                        reinvent success.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-sm-12 col-lg-4 col-xl-3">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="" class="text-decoration-none text-dark">
+                            <div class="card rounded-4 text-center py-5 shadow"
+                                style="max-width: 18rem; min-width: 16;">
+                                <div><img src="./asstse/Images/BUS.png" class="img-fluid" alt=""></div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Bus Service</h5>
+                                    <p class="card-text">ubiquitous models rather than parallel initiatives. Seamlessly
+                                        reinvent success.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 3 Section -->
+    <section class="about-section my-5 py-5">
+        <div class="container py-5 my-5">
+            <div class="row g-5 mb-4 my-2 py-5">
+                <div
+                    class="col-12 col-sm-12 col-md-6 col-lg-6 d-flex flex-column align-items-center justify-content-center">
+                    <div class="section-text">
+                        <h4 class="text-white">More About Us</h4>
+                        <h1 class="text-white">Spacial Care For Your<br>
+                            Children</h1>
+                        <p class="text-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <button class="btn btn-light rounded-1">Lern More</button>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="section-img">
+                        <div class="in-img">
+                            <img src="./asstse/Images/IlLapf 1.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-3 mb-5 pb-5 px-5">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="text-this text-white text-center">
+                        <h4>45</h4>
+                        <h4 class="my-0">Qualified</h4>
+                        <h4 class="my-0">Teachers</h4>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="text-this text-white text-center">
+                        <h4>20</h4>
+                        <h4 class="my-0">Years of</h4>
+                        <h4 class="my-0">Experience</h4>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="text-this text-white text-center">
+                        <h4>565</h4>
+                        <h4 class="my-0">Students</h4>
+                        <h4 class="my-0">Enrolled</h4>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="text-this text-white text-center">
+                        <h4>15</h4>
+                        <h4 class="my-0">Total</h4>
+                        <h4 class="my-0">Groups</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 4 Section -->
+    <section class="on-going">
+        <div class="container">
+            <div class="heading text-center py-sm-5 ">
+                <h5>On Going Classes</h5>
+                <h1>
+                    Take The Classes & Start <br>
+                    Learning From Today
+                </h1>
+            </div>
+            <div class="row g-5 my-3">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="card card-bg shadow" style="width: 19rem;">
+                        <img src="./asstse/Images/language.png" class="card-img-top img-fluid  mt-1 p-2" alt="...">
+                        <div class="card-body text-white pt-0">
+                            <div class="card-main d-flex align-items-center justify-content-between mb-2">
+                                <h5 class="card-title">Card title</h5>
+                                <div class="btn btn-c btn-warning">$45</div>
+                            </div>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class="falana pb-3 w-100 d-flex align-items-center justify-content-between">
+                                <div class="age px-2 text-center">
+                                    <h5 class="text-warning m-0 p-0">Age:</h5>
+                                    <p class="p-0 m-0">3-5 Years</p>
+                                </div>
+                                <div class="time px-2 text-center">
+                                    <h5 class="text-warning m-0 p-0">Time:</h5>
+                                    <p class="p-0 m-0">8-10 am</p>
+                                </div>
+                                <div class="cet px-2 text-center">
+                                    <h5 class="text-warning m-0 p-0">capacity:</h5>
+                                    <p class="p-0 m-0">20 Kids</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-warning w-100 mb-1">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="card card-bg shadow" style="width: 19rem;">
+                        <img src="./asstse/Images/language.png" class="card-img-top img-fluid mt-1 p-2" alt="...">
+                        <div class="card-body text-white pt-0">
+                            <div class="card-main d-flex align-items-center justify-content-between mb-2">
+                                <h5 class="card-title">Card title</h5>
+                                <div class="btn btn-c btn-warning">$45</div>
+                            </div>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class="falana pb-3 w-100 d-flex align-items-center justify-content-between">
+                                <div class="age px-2 text-center">
+                                    <h5 class="text-warning m-0 p-0">Age:</h5>
+                                    <p class="p-0 m-0">3-5 Years</p>
+                                </div>
+                                <div class="time px-2 text-center">
+                                    <h5 class="text-warning m-0 p-0">Time:</h5>
+                                    <p class="p-0 m-0">8-10 am</p>
+                                </div>
+                                <div class="cet px-2 text-center">
+                                    <h5 class="text-warning m-0 p-0">capacity:</h5>
+                                    <p class="p-0 m-0">20 Kids</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-warning w-100 mb-1">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="card card-bg shadow" style="width: 19rem;">
+                        <img src="./asstse/Images/language.png" class="card-img-top img-fluid mt-1 p-2" alt="...">
+                        <div class="card-body text-white pt-0">
+                            <div class="card-main d-flex align-items-center justify-content-between mb-2">
+                                <h5 class="card-title">Card title</h5>
+                                <div class="btn btn-c btn-warning">$45</div>
+                            </div>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class="falana pb-3 w-100 d-flex align-items-center justify-content-between">
+                                <div class="age px-2 text-center">
+                                    <h5 class="text-warning m-0 p-0">Age:</h5>
+                                    <p class="p-0 m-0">3-5 Years</p>
+                                </div>
+                                <div class="time px-2 text-center">
+                                    <h5 class="text-warning m-0 p-0">Time:</h5>
+                                    <p class="p-0 m-0">8-10 am</p>
+                                </div>
+                                <div class="cet px-2 text-center">
+                                    <h5 class="text-warning m-0 p-0">capacity:</h5>
+                                    <p class="p-0 m-0">20 Kids</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-warning w-100 mb-1">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="card card-bg shadow" style="width: 19rem;">
+                        <img src="./asstse/Images/language.png" class="card-img-top img-fluid mt-1 p-2" alt="...">
+                        <div class="card-body text-white pt-0">
+                            <div class="card-main d-flex align-items-center justify-content-between mb-2">
+                                <h5 class="card-title">Card title</h5>
+                                <div class="btn btn-c btn-warning">$45</div>
+                            </div>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class="falana pb-3 w-100 d-flex align-items-center justify-content-between">
+                                <div class="age px-2 text-center">
+                                    <h5 class="text-warning m-0 p-0">Age:</h5>
+                                    <p class="p-0 m-0">3-5 Years</p>
+                                </div>
+                                <div class="time px-2 text-center">
+                                    <h5 class="text-warning m-0 p-0">Time:</h5>
+                                    <p class="p-0 m-0">8-10 am</p>
+                                </div>
+                                <div class="cet px-2 text-center">
+                                    <h5 class="text-warning m-0 p-0">capacity:</h5>
+                                    <p class="p-0 m-0">20 Kids</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-warning w-100 mb-1">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5 my-3">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="card card-bg shadow" style="width: 19rem;">
+                        <img src="./asstse/Images/language.png" class="card-img-top img-fluid mt-1 p-2" alt="...">
+                        <div class="card-body text-white pt-0">
+                            <div class="card-main d-flex align-items-center justify-content-between mb-2">
+                                <h5 class="card-title">Card title</h5>
+                                <div class="btn btn-c btn-warning">$45</div>
+                            </div>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class="falana pb-3 w-100 d-flex align-items-center justify-content-between">
+                                <div class="age px-2 text-center">
+                                    <h5 class="text-warning m-0 p-0">Age:</h5>
+                                    <p class="p-0 m-0">3-5 Years</p>
+                                </div>
+                                <div class="time px-2 text-center">
+                                    <h5 class="text-warning m-0 p-0">Time:</h5>
+                                    <p class="p-0 m-0">8-10 am</p>
+                                </div>
+                                <div class="cet px-2 text-center">
+                                    <h5 class="text-warning m-0 p-0">capacity:</h5>
+                                    <p class="p-0 m-0">20 Kids</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-warning w-100 mb-1">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="card card-bg shadow" style="width: 19rem;">
+                        <img src="./asstse/Images/language.png" class="card-img-top img-fluid mt-1 p-2" alt="...">
+                        <div class="card-body text-white pt-0">
+                            <div class="card-main d-flex align-items-center justify-content-between mb-2">
+                                <h5 class="card-title">Card title</h5>
+                                <div class="btn btn-c btn-warning">$45</div>
+                            </div>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class="falana pb-3 w-100 d-flex align-items-center justify-content-between">
+                                <div class="age px-2 text-center">
+                                    <h5 class="text-warning m-0 p-0">Age:</h5>
+                                    <p class="p-0 m-0">3-5 Years</p>
+                                </div>
+                                <div class="time px-2 text-center">
+                                    <h5 class="text-warning m-0 p-0">Time:</h5>
+                                    <p class="p-0 m-0">8-10 am</p>
+                                </div>
+                                <div class="cet px-2 text-center">
+                                    <h5 class="text-warning m-0 p-0">capacity:</h5>
+                                    <p class="p-0 m-0">20 Kids</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-warning w-100 mb-1">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="card card-bg shadow" style="width: 19rem;">
+                        <img src="./asstse/Images/language.png" class="card-img-top img-fluid mt-1 p-2" alt="...">
+                        <div class="card-body text-white pt-0">
+                            <div class="card-main d-flex align-items-center justify-content-between mb-2">
+                                <h5 class="card-title">Card title</h5>
+                                <div class="btn btn-c btn-warning">$45</div>
+                            </div>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class="falana pb-3 w-100 d-flex align-items-center justify-content-between">
+                                <div class="age px-2 text-center">
+                                    <h5 class="text-warning m-0 p-0">Age:</h5>
+                                    <p class="p-0 m-0">3-5 Years</p>
+                                </div>
+                                <div class="time px-2 text-center">
+                                    <h5 class="text-warning m-0 p-0">Time:</h5>
+                                    <p class="p-0 m-0">8-10 am</p>
+                                </div>
+                                <div class="cet px-2 text-center">
+                                    <h5 class="text-warning m-0 p-0">capacity:</h5>
+                                    <p class="p-0 m-0">20 Kids</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-warning w-100 mb-1">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="card card-bg shadow" style="width: 19rem;">
+                        <img src="./asstse/Images/language.png" class="card-img-top img-fluid mt-1 p-2" alt="...">
+                        <div class="card-body text-white pt-0">
+                            <div class="card-main d-flex align-items-center justify-content-between mb-2">
+                                <h5 class="card-title">Card title</h5>
+                                <div class="btn btn-c btn-warning">$45</div>
+                            </div>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class="falana pb-3 w-100 d-flex align-items-center justify-content-between">
+                                <div class="age px-2 text-center">
+                                    <h5 class="text-warning m-0 p-0">Age:</h5>
+                                    <p class="p-0 m-0">3-5 Years</p>
+                                </div>
+                                <div class="time px-2 text-center">
+                                    <h5 class="text-warning m-0 p-0">Time:</h5>
+                                    <p class="p-0 m-0">8-10 am</p>
+                                </div>
+                                <div class="cet px-2 text-center">
+                                    <h5 class="text-warning m-0 p-0">capacity:</h5>
+                                    <p class="p-0 m-0">20 Kids</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-warning w-100 mb-1">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 5 section -->
+    <section class="edu-section py-5">
+        <div class="container">
+            <div class="heading py-5 text-center">
+                <h2>Educational Programs</h2>
+                <h1>Step By Step Systematic<br>
+                    Education</h1>
+            </div>
+            <div class="row g-5 py-5 align-items-center justify-content-between">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 m-0">
+                    <div
+                        class="card rounded-5 shadow d-flex flex-row align-items-center justify-content-arround py-5 px-2">
+                        <div class="card-img-top d-flex align-items-center justify-content-center">
+                            <img src="./asstse/Images/Mask group.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="card-body w-100">
+                            <h5 class="card-title">Online Class</h5>
+                            <p class="card-text">Eu turpis egestas pretium aenean pharetra magna ac.
+                            </p>
+                            <a href="#" class="text-decoration-none">Read more <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 m-0">
+                    <div
+                        class="card rounded-5 shadow d-flex flex-row align-items-center justify-content-arround py-5 px-2">
+                        <div class="card-img-top d-flex align-items-center justify-content-center">
+                            <img src="./asstse/Images/Mask group.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="card-body w-100">
+                            <h5 class="card-title">Online Class</h5>
+                            <p class="card-text">Eu turpis egestas pretium aenean pharetra magna ac.
+                            </p>
+                            <a href="#" class="text-decoration-none">Read more <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5 mb-5 py-5 align-items-center justify-content-between">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 m-0">
+                    <div
+                        class="card rounded-5 shadow d-flex flex-row align-items-center justify-content-arround py-5 px-2">
+                        <div class="card-img-top d-flex align-items-center justify-content-center">
+                            <img src="./asstse/Images/Mask group.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="card-body w-100">
+                            <h5 class="card-title">Online Class</h5>
+                            <p class="card-text">Eu turpis egestas pretium aenean pharetra magna ac.
+                            </p>
+                            <a href="#" class="text-decoration-none">Read more <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 m-0">
+                    <div
+                        class="card rounded-5 shadow d-flex flex-row align-items-center justify-content-arround py-5 px-2">
+                        <div class="card-img-top d-flex align-items-center justify-content-center">
+                            <img src="./asstse/Images/Mask group.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="card-body w-100">
+                            <h5 class="card-title">Online Class</h5>
+                            <p class="card-text">Eu turpis egestas pretium aenean pharetra magna ac.
+                            </p>
+                            <a href="#" class="text-decoration-none">Read more <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 6 section -->
+    <section class="coleb-section">
+        <div class="container py-5 mt-5">
+            <div class="content mt-5 py-5">
+                <div class="row g-5 py-5">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 d-flex flex-column align-items-center">
+                        <div class="ico">
+                            <img src="./asstse/Images/Group 58 (1).png" class="mx-auto img-fluid" alt="">
+                        </div>
+                        <div class="ico-text text-white text-center">
+                            <h3>3564+</h3>
+                            <h5>Students Admission</h5>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 d-flex flex-column align-items-center">
+                        <div class="ico">
+                            <img src="./asstse/Images/Group 60 (1).png" class="mx-auto img-fluid" alt="">
+                        </div>
+                        <div class="ico-text text-white text-center">
+                            <h3>156+</h3>
+                            <h5>Total No.of Class</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-5 py-5 my-5">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 d-flex flex-column align-items-center">
+                        <div class="ico">
+                            <img src="./asstse/Images/Group 58.png" class="mx-auto img-fluid" alt="">
+                        </div>
+                        <div class="ico-text text-white text-center">
+                            <h3>3564+</h3>
+                            <h5>Students Admission</h5>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 d-flex flex-column align-items-center">
+                        <div class="ico">
+                            <img src="./asstse/Images/Group 60.png" class="mx-auto img-fluid" alt="">
+                        </div>
+                        <div class="ico-text text-white text-center">
+                            <h3>156+</h3>
+                            <h5>Total No.of Class</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 7 section -->
+    <section class="contact-section mb-5">
+        <div class="container">
+            <div class="heading-cont pt-5 text-center">
+                <h5>GET IN TOUCH</h5>
+                <h1>Needs Help? Let's Get in Touch</h1>
+            </div>
+            <div class="main-contact my-5 pb-5">
+                <form action="#">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="input-group mb-4">
+                                <input type="name" class="form-control border-0 py-3 px-4 rounded-3 "
+                                    placeholder="Your Name" aria-label="yourname" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="input-group mb-4">
+                                <input type="email" class="form-control border-0 py-3 px-4 rounded-3 "
+                                    placeholder="Your Email" aria-label="youremail" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="input-group mb-4">
+                                <input type="text" class="form-control border-0 py-3 px-4 rounded-3 "
+                                    placeholder="Subject" aria-label="subject" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="input-group">
+                                <textarea rows="8" class="form-control mb-4 border-0 py-3 px-4 rounded-3 "
+                                    placeholder="Message" aria-label="With textarea"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-lg-2 mx-auto">
+                            <div class="sub-btn">
+                                <button class="btn btn-sub w-100 text-white my-3 rounded-3 mx-auto">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="px-5 pt-5 pb-2 bg-dark">
+        <div class="row p-3 px-5 justify-content-evenly">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="f-logo py-3">
+                    <img src="./asstse/Images/logo.png" class="img-fluid" alt="">
+                </div>
+                <div class="f-text text-white py-3">
+                    <h3>ABOUT COMPANY</h3>
+                    <p class="text-white-50">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has</p>
+                </div>
+                <div class="link py-3">
+                    <div class="ico">
+                        <button class="btn btn-warning text-white fw-bold rounded-5 shadow"><i
+                                class="bi bi-twitter-x"></i></button>
+                        <button class="btn btn-warning text-white fw-bold rounded-5 shadow"><i
+                                class="bi bi-facebook"></i></button>
+                        <button class="btn btn-warning text-white fw-bold rounded-5 shadow"><i
+                                class="bi bi-instagram"></i></button>
+                        <button class="btn btn-warning text-white fw-bold rounded-5 shadow"><i
+                                class="bi bi-linkedin"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-2">
+                <div class="f-link py-4 text-white ">
+                    <h3>Our Services</h3>
+                    <div class="f-m-link py-3 d-flex flex-column">
+                        <a href="#" class="text-decoration-none text-white-50  my-1">Online class</a>
+                        <a href="#" class="text-decoration-none text-white-50  my-1">Baby care</a>
+                        <a href="#" class="text-decoration-none text-white-50  my-1">Shop</a>
+                        <a href="#" class="text-decoration-none text-white-50  my-1">Kids Playzone</a>
+                        <a href="#" class="text-decoration-none text-white-50  my-1">Nurse</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-2">
+                <div class="f-link-2 py-4 text-white ">
+                    <h3>Useful links</h3>
+                    <div class="f-m-link-2 py-3 d-flex flex-column">
+                        <a href="#" class="text-decoration-none text-white-50  my-1">About us</a>
+                        <a href="#" class="text-decoration-none text-white-50  my-1">Our team</a>
+                        <a href="#" class="text-decoration-none text-white-50  my-1">Privacy policy</a>
+                        <a href="#" class="text-decoration-none text-white-50  my-1">Contact us</a>
+                        <a href="#" class="text-decoration-none text-white-50  my-1">Terms of service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="f-text text-white py-3">
+                    <h3>Newsletter</h3>
+                </div>
+                <div class="f-text text-white-50 py-3">
+                    <p>Aplications prodize before front end ortals visualize front end</p>
+                </div>
+                <div class="letter py-3">
+                    <div class="let">
+                        <form action="#">
+                            <div class="input-group mb-2">
+                                <input type="email"
+                                    class="form-control email-n bg-dark border-1-white-50 py-3 px-3 rounded-3 "
+                                    placeholder="Your Email" aria-label="youremail" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="input-group mb-2">
+                                <button
+                                    class="btn btn-sub-n w-100 text-white my-3 py-3 rounded-3 mx-auto">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="text-light ">
+        <div class="copyright text-center text-white-50">
+            <p>@copyright 2023 all right reserved by hasan raza</p>
+        </div>
+    </footer>
+</body>
+
+</html>
