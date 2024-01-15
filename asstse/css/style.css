@@ -94,7 +94,7 @@ body{
     margin-top: 10rem !important;
 }
 .about-section{
-    background-image: url(/asstse/Images/bgbgbgbg.png);
+    background-image: url(../asstse/Images/bgbgbgbg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
