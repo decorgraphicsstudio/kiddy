@@ -94,7 +94,7 @@ body{
     margin-top: 10rem !important;
 }
 .about-section{
-    background-image: url(../asstse/Images/bgbgbgbg.png);
+    background-image: url(../Images/bgbgbgbg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -130,7 +130,7 @@ body{
     font-size: 1.05rem !important;
 }
 .coleb-section{
-    background-image: url(/asstse/Images/Group\ 96.png);
+    background-image: url(../Images/Group\ 96.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -138,7 +138,7 @@ body{
     bottom: 15rem;
 }
 .contact-section .container{
-    background-image: url(/asstse/Images/contbg.png);
+    background-image: url(../Images/contbg.png);
     background-repeat: no-repeat;
     background-position: center;
     padding: 5rem 8rem !important;
